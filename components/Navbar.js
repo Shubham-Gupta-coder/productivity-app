@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 
 const Navbar = () => {
     const navigation = useNavigation();
-  return (
+    return (
       <View style={styles.main}>
           <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('Home')}>
               <Image source={require('../assets/home.png')} style={{ width: 40, height: 40,marginBottom:10 }} />
@@ -15,14 +15,14 @@ const Navbar = () => {
               <Text>Notes</Text>
               </TouchableOpacity>
           <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('Tasks')}>
-              <Image source={require('../assets/task.png')} style={{ width: 40, height: 40,marginBottom:10 }} />
+              <Image source={require('../assets/task.png')} style={{ width: 40, height: 40,marginBottom:10, }} />
               <Text>Tasks</Text>
               </TouchableOpacity>
           <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('Books')}>
               <Image source={require('../assets/books.png')} style={{ width: 40, height: 40,marginBottom:10 }} />
               <Text>Books</Text>
               </TouchableOpacity>
-    </View>
+            </View>
   )
 }
 
